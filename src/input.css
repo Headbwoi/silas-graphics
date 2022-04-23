@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+html {
+  font-family: "Space Mono", monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger span{
+  transform-origin: 7.45px;
+}
+.hamburger.active span{
+  transform: rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+  transform: rotate(-45deg);
+}
