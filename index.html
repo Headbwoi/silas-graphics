@@ -9,25 +9,35 @@
     <script defer src="script.js"></script>
   </head>
   <body class="font-mono bg-veryDark">
-    <header class="flex justify-between items-center">
+    <header class="flex justify-between items-center relative">
       <div class="container mx-auto p-6 flex items-center justify-between">
+        <!-- logo -->
         <div
           class="text-2xl text-gray-300 font-bold capitalise italic relative after:absolute after:left-0 after:block after:w-6 after:h-0.5 after:bg-gray-300 hover:text-gray-200"
         >
           <a href="/index.html">Silas-Graphics</a>
         </div>
 
-        <div class="nav-links hidden md:flex space-x-8">
-            <a href="#" class="font-semibold text-lg text-gray-300 hover:text-white duration-300">Home</a>
-            <a href="#" class="font-semibold text-lg text-gray-300 hover:text-white duration-300">About</a>
-            <a href="#" class="font-semibold text-lg text-gray-300 hover:text-white duration-300">Projects</a>
-            <a href="#" class="font-semibold text-lg text-gray-300 hover:text-white duration-300">Contact</a>
+        <!-- desktop nav menu -->
+        <div class="nav-links hidden  md:flex space-x-8">
+            <a href="#" class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:bg-white">Home</a>
+            <a href="#" class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:bg-white">About</a>
+            <a href="#" class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:bg-white">Projects</a>
+            <a href="#" class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:bg-white">Contact</a>
         </div>
 
         <div class="hamburger md:hidden" id="toggle">
           <span class="block w-7 h-0.5 bg-gray-200 mb-2 relative duration-300 cursor-pointer"></span>
           <span class="block w-7 h-0.5 bg-gray-200 relative duration-300 cursor-pointer"></span>
           
+          <!-- mobile nav menu -->
+          <div class="mob-menu fixed top-[15%] left-0 -translate-x-[100%] pl-12 pt-12 overflow-hidden bg-dark duration-500 rounded-r-lg w-3/4 h-full shadow-xl">
+            
+            <a href="#" class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:bg-white mb-12">Home</a>
+              <a href="#" class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:bg-white mb-12">About</a>
+              <a href="#" class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:bg-white mb-12">Projects</a>
+              <a href="#" class="block font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:bg-white bg-veryLightDark w-fit p-5 rounded-full ">Contact</a>
+          </div>
         </div>
       </div>
     </header>
