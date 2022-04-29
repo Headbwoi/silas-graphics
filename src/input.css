@@ -2,6 +2,7 @@
 
 html {
   font-family: "Space Mono", monospace;
+  scroll-behavior: smooth;
 }
 
 @tailwind base;
@@ -24,4 +25,15 @@ html {
 /* home */
 .home .image img{
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+/* cta btn */
+.cta-btn{
+  @apply block w-fit mx-auto lg:mx-0 py-3 px-7 my-4 rounded-full text-lg text-gray-100 bg-crimson duration-150 hover:font-extrabold hover:text-white;
+}
+
+/* about */
+
+.grid-box{
+  box-shadow:  0.5rem 1rem rgb(0 0 0 / 70%);
 }

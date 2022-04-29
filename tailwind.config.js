@@ -16,9 +16,8 @@ module.exports = {
       colors: {
         dark: "hsl(217, 28%, 15%)",
         veryDark: "hsl(216, 53%, 9%)",
-        lightDark: "hsl(218, 28%, 13%)",
-        veryLightDark: "hsl(219, 30%, 18%)",
         crimson:"crimson",
+        lightDark: "#1a1a1a",
       },
     },
   },
