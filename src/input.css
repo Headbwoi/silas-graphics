@@ -22,6 +22,34 @@ html {
   transform: translateX(0);
 }
 
+/* desktop nav animation */
+.nav-animate{
+  animation: slide-in 1s ease-in-out forwards;
+  animation-delay: 100ms;
+}
+@keyframes slide-in{
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.left{
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.right{
+  transform: translateX(50%);
+  opacity: 0;
+}
+.show{
+  transform: translate(0);
+  opacity: 1;
+}
+
 /* home */
 .home .image img{
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;

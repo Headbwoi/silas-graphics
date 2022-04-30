@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="public/styles.css" />
     <script defer src="script.js"></script>
   </head>
-  <body class="font-mono bg-black scroll-smooth">
+  <body class="font-mono bg-black">
+    <!-- header section -->
     <header class="flex justify-between items-center relative">
       <div class="container p-6 lg:px-0 flex items-center justify-between">
         <!-- logo -->
         <div
-          class="text-2xl text-gray-300 font-bold capitalise italic relative after:absolute after:left-0 after:block after:w-6 after:h-0.5 after:bg-gray-300 hover:text-gray-200"
+          class="text-2xl text-gray-300 font-bold capitalise italic relative after:absolute after:left-0 after:block after:w-6 after:h-0.5 after:bg-gray-300 hover:text-gray-200 animate-bounce"
         >
           <a href="/index.html">Silas-Graphics</a>
         </div>
 
         <!-- desktop nav menu -->
-        <div class="nav-links hidden md:flex space-x-10">
+        <div class="nav-links hidden md:flex space-x-10 nav-animate">
           <a
             href="#home"
             class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
@@ -54,7 +55,7 @@
 
           <!-- mobile nav menu -->
           <div
-            class="mob-menu fixed top-[15%] left-0 -translate-x-[100%] pl-12 pt-12 overflow-hidden bg-black duration-500 rounded-r-lg w-3/4 h-full shadow-xl"
+            class="mob-menu fixed top-[10%] left-0 -translate-x-[100%] pl-12 pt-12 overflow-hidden bg-black opacity-95 duration-500 rounded-r-lg w-3/4 h-full shadow-xl z-50"
           >
             <a
               href="#home"
@@ -81,11 +82,13 @@
       </div>
     </header>
 
+    <!-- main section -->
     <main>
       <!-- hero section -->
       <section class="home" id="home">
         <div class="container lg:flex lg:items-center lg:justify-between">
-          <div class="image lg:w-1/2">
+          <!-- image -->
+          <div class="image lg:w-1/2 left duration-300 card">
             <img
               src="images/silas-meduim.jpeg"
               alt="silas-ishaya"
@@ -93,8 +96,9 @@
             />
           </div>
 
+          <!-- text -->
           <div
-            class="text text-center lg:text-left px-8 lg:px-0 lg:w-1/2 lg:pl-6"
+            class="text text-center lg:text-left px-8 lg:px-0 lg:w-1/2 lg:pl-6 right duration-300 card"
           >
             <h1
               class="font-semibold text-2xl lg:text-4xl text-white block capitalize my-4"
@@ -111,11 +115,7 @@
               I am the Graphics Designer you've been looking for. Do you want
               something done and done right? if YES, then
             </p>
-            <a
-              href="#"
-              class="cta-btn"
-              >Hire Me</a
-            >
+            <a href="#" class="cta-btn">Hire Me</a>
           </div>
         </div>
       </section>
@@ -125,37 +125,60 @@
       <section class="about py-20" id="about">
         <div class="container">
           <h2
-            class="text-5xl lg:text-7xl text-center text-gray-300 uppercase font-extrabold tracking-widest mb-6"
+            class="text-5xl lg:text-7xl text-center text-gray-300 uppercase font-extrabold tracking-widest mb-6 left duration-300 card"
           >
             about<span class="uppercase text-crimson pl-3">me</span>
           </h2>
 
           <!-- about me info -->
-          <div class="about-info mt-5 lg:mt-24 mb-8 px-7 lg:px-0 lg:flex lg:items-center lg:justify-between lg:space-x-24">
-            <p class="text-white text-lg text-center mb-5 lg:mb-0 lg:text-left lg:w-1/2">Hi, i'm <span class="text-crimson">Silas</span><br> i've had the passion for Graphics Design since i was 12, with the dream and plan of making a difference in the World and the world of Graphics. </p>
+          <div
+            class="about-info mt-5 lg:mt-24 mb-8 px-7 lg:px-0 lg:flex lg:items-center lg:justify-between lg:space-x-24"
+          >
+            <p
+              class="text-white text-lg text-center mb-5 lg:mb-0 lg:text-left lg:w-1/2 left duration-300 card"
+            >
+              Hi, i'm <span class="text-crimson">Silas</span><br />
+              i've had the passion for Graphics Design since i was 12, with the
+              dream and plan of making a difference in the World and the world
+              of Graphics.
+            </p>
 
             <!-- image -->
-            <div class="silas relative w-full h-full lg:w-1/2 group cursor-pointer">
-              <img src="images/12yroldsilas.jpg" alt="silas"
-            class="w-full h-full rounded">
-            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.55)] to-[rgba(0,0,0,0.6)]  ">
-              <p class="absolute top-1/2 left-1/2 -translate-x-1/2 font-bold text-lg text-white capitalize italic group-hover:z-20">
-                me at 12
-              </p>
+            <div
+              class="silas relative w-full h-full lg:w-1/2 group cursor-pointer right duration-300 card"
+            >
+              <img
+                src="images/12yroldsilas.jpg"
+                alt="silas"
+                class="w-full h-full rounded"
+              />
+              <div
+                class="absolute inset-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.55)] to-[rgba(0,0,0,0.6)]"
+              >
+                <p
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 font-bold text-lg text-white capitalize italic group-hover:z-20"
+                >
+                  me at 12
+                </p>
+              </div>
             </div>
-            </div>
-
           </div>
 
           <!-- personal info -->
-          <p class="uppercase text-2xl text-white text-center font-bold my-12 px-4">
+          <p
+            class="uppercase text-2xl text-white text-center font-bold my-12 px-4 right duration-300 card"
+          >
             personal info
           </p>
 
           <!-- about me stats -->
-          <div class="px-4 lg:px-0 md:flex md:justify-center lg:items-center lg:justify-between">
+          <div
+            class="px-4 lg:px-0 md:flex md:justify-center lg:items-center lg:justify-between"
+          >
             <!-- info -->
-            <div class="md:flex lg:items-center lg:justify-between mb-8 lg:mb-0">
+            <div
+              class="md:flex lg:items-center lg:justify-between mb-8 lg:mb-0 left ration-400 card"
+            >
               <!-- info -1 -->
               <div class="info mr-6">
                 <div>
@@ -214,40 +237,47 @@
                   </p>
                 </div>
               </div>
-              
             </div>
 
             <!-- achievement -->
 
-            <div class="grid grid-cols-2 gap-4">
-              <div class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150">
-                <p class="text-crimson text-5xl font-extrabold ">7+</p>
-                <p class="capitalize text-lg text-gray-400">years of Experience</p>
-              </div>
-              <div class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150">
-                <p class="text-crimson text-5xl font-extrabold ">50+</p>
+            <div class="grid grid-cols-2 gap-4 right duration-300 card">
+              <div
+                class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150"
+              >
+                <p class="text-crimson text-5xl font-extrabold">7+</p>
                 <p class="capitalize text-lg text-gray-400">
-                  happy clients </p>
+                  years of Experience
+                </p>
               </div>
-              <div class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150">
-                <p class="text-crimson text-5xl font-extrabold ">100+</p>
-                <p class="capitalize text-lg text-gray-400">projects completed</p>
+              <div
+                class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150"
+              >
+                <p class="text-crimson text-5xl font-extrabold">50+</p>
+                <p class="capitalize text-lg text-gray-400">happy clients</p>
               </div>
-              <div class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150">
-                <p class="text-crimson text-5xl font-extrabold ">12+</p>
+              <div
+                class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150"
+              >
+                <p class="text-crimson text-5xl font-extrabold">100+</p>
+                <p class="capitalize text-lg text-gray-400">
+                  projects completed
+                </p>
+              </div>
+              <div
+                class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150"
+              >
+                <p class="text-crimson text-5xl font-extrabold">12+</p>
                 <p class="capitalize text-lg text-gray-400">awards won</p>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
 
       <!-- my projects -->
 
-      <section class="projects">
-        
-      </section>
+      <section class="projects"></section>
     </main>
 
     <footer></footer>
