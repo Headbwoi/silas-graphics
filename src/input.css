@@ -4,6 +4,16 @@ html {
   font-family: "Space Mono", monospace;
   scroll-behavior: smooth;
 }
+html::-webkit-scrollbar{
+  width: .7rem;
+}
+html::-webkit-scrollbar-thumb{
+  background-color: hsl(348, 83%, 47%);
+  border-radius: 1rem;
+}
+html::-webkit-scrollbar-track{
+  background-color: black;
+}
 
 @tailwind base;
 @tailwind components;
@@ -57,11 +67,11 @@ html {
 
 /* cta btn */
 .cta-btn{
-  @apply block w-fit mx-auto lg:mx-0 py-3 px-7 my-4 rounded-full text-lg text-gray-100 bg-crimson duration-150 hover:font-extrabold hover:text-white;
+  @apply block w-fit mx-auto lg:mx-0 py-3 px-7 my-4 rounded-full text-lg text-gray-100 bg-crimson hover:bg-darkCrimson duration-150 hover:text-white;
 }
 
 /* about */
 
 .grid-box{
-  box-shadow:  0.5rem 1rem rgb(0 0 0 / 70%);
+  box-shadow: 0px 0px 1rem rgb(0 0 0 / 70%);
 }

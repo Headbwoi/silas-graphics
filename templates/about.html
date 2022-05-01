@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Silas-Graphics" />
     <meta name="author" content="Headbwoi" />
-    <title>Silas-Graphics | landing page</title>
-    <link rel="stylesheet" href="public/styles.css" />
-    <script defer src="script.js"></script>
+    <title>Silas-Graphics | landing page - About Me</title>
+    <link rel="stylesheet" href="../public/styles.css" />
+    <script defer src="../script.js"></script>
   </head>
-  <body class="font-mono bg-black">
-    <!-- header section -->
-    <header class="flex justify-between items-center relative">
+  <body class="font-mono bg-black overflow-x-hidden">
+     <!-- header section -->
+     <header class="flex justify-between items-center relative">
       <div class="container p-6 lg:px-0 flex items-center justify-between">
         <!-- logo -->
         <div
@@ -24,7 +24,7 @@
         <!-- desktop nav menu -->
         <div class="nav-links hidden md:flex space-x-10 nav-animate">
           <a
-            href="#home"
+            href="index.html"
             class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
             >Home</a
           >
@@ -34,16 +34,23 @@
             >About</a
           >
           <a
-            href="#"
+            href="skills.html"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Skills</a
+          >
+          <a
+            href="#projects"
             class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
             >Projects</a
           >
+
           <a
-            href="#"
+            href="#contact"
             class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
             >Contact</a
           >
         </div>
+        <!-- hamburger -->
 
         <div class="hamburger md:hidden" id="toggle">
           <span
@@ -58,7 +65,7 @@
             class="mob-menu fixed top-[10%] left-0 -translate-x-[100%] pl-12 pt-12 overflow-hidden bg-black opacity-95 duration-500 rounded-r-lg w-3/4 h-full shadow-xl z-50"
           >
             <a
-              href="#home"
+              href="index.html"
               class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
               >Home</a
             >
@@ -66,6 +73,11 @@
               href="#about"
               class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
               >About</a
+            >
+            <a
+              href="skills.html"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >Skills</a
             >
             <a
               href="#"
@@ -81,44 +93,8 @@
         </div>
       </div>
     </header>
-
     <!-- main section -->
-    <main>
-      <!-- hero section -->
-      <section class="home" id="home">
-        <div class="container lg:flex lg:items-center lg:justify-between">
-          <!-- image -->
-          <div class="image lg:w-1/2 left duration-300 card">
-            <img
-              src="images/silas-meduim.jpeg"
-              alt="silas-ishaya"
-              class="block w-[90%] mx-auto lg:mx-0 my-8 rounded-full md:rounded-sm"
-            />
-          </div>
-
-          <!-- text -->
-          <div
-            class="text text-center lg:text-left px-8 lg:px-0 lg:w-1/2 lg:pl-6 right duration-300 card"
-          >
-            <h1
-              class="font-semibold text-2xl lg:text-4xl text-white block capitalize my-4"
-            >
-              Hi, I am silas-ishaya
-              <span
-                class="block text-center lg:text-left text-crimson text-xl lg:text-3xl my-2"
-                >Graphics Designer</span
-              >
-            </h1>
-            <p
-              class="block text-center lg:text-left text-md text-white my-5 lg:text-lg"
-            >
-              I am the Graphics Designer you've been looking for. Do you want
-              something done and done right? if YES, then
-            </p>
-            <a href="#" class="cta-btn">Hire Me</a>
-          </div>
-        </div>
-      </section>
+    <main class="overflow-x-hidden">
 
       <!-- about section -->
 
@@ -132,7 +108,7 @@
 
           <!-- about me info -->
           <div
-            class="about-info mt-5 lg:mt-24 mb-8 px-7 lg:px-0 lg:flex lg:items-center lg:justify-between lg:space-x-24"
+            class="about-info mt-5 lg:mt-24 mb-8 lg:mb-24 px-7 lg:px-0 lg:flex lg:items-center lg:justify-between lg:space-x-24"
           >
             <p
               class="text-white text-lg text-center mb-5 lg:mb-0 lg:text-left lg:w-1/2 left duration-300 card"
@@ -148,7 +124,7 @@
               class="silas relative w-full h-full lg:w-1/2 group cursor-pointer right duration-300 card"
             >
               <img
-                src="images/12yroldsilas.jpg"
+                src="../images/12yroldsilas.jpg"
                 alt="silas"
                 class="w-full h-full rounded"
               />
@@ -164,78 +140,86 @@
             </div>
           </div>
 
-          <!-- personal info -->
-          <p
-            class="uppercase text-2xl text-white text-center font-bold my-12 px-4 right duration-300 card"
-          >
-            personal info
-          </p>
-
+          
           <!-- about me stats -->
           <div
             class="px-4 lg:px-0 md:flex md:justify-center lg:items-center lg:justify-between"
           >
             <!-- info -->
-            <div
-              class="md:flex lg:items-center lg:justify-between mb-8 lg:mb-0 left ration-400 card"
-            >
-              <!-- info -1 -->
-              <div class="info mr-6">
-                <div>
-                  <p class="text-md text-gray-400">
-                    Name:<span class="pl-1 text-white capitalize"
-                      >silas ishaya</span
-                    >
-                  </p>
+            <div class="block">
+              <!-- personal info -->
+              <p
+                class="uppercase text-2xl text-white text-left font-bold mt-12 lg:mt-0 mb-6 right duration-300 card"
+              >
+                personal info
+              </p>
+              <div
+                class="md:flex lg:items-center lg:justify-between mb-8 left ration-400 card"
+              >
+                <!-- info -1 -->
+                <div class="info mr-6">
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Name:<span class="pl-1 text-white capitalize"
+                        >silas ishaya</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Email:<span class="pl-1 text-white"
+                        >silasishaya90@gmail.com</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Age:<span class="pl-1 text-white">19</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Address:<span class="pl-1 text-white capitalize"
+                        >bauchi, nigeria
+                      </span>
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p class="text-md text-gray-400">
-                    Email:<span class="pl-1 text-white">email@gmail.com</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="text-md text-gray-400">
-                    Age:<span class="pl-1 text-white">19</span>
-                  </p>
-                </div>
-                <div>
-                  <p class="text-md text-gray-400">
-                    Address:<span class="pl-1 text-white capitalize"
-                      >bauchi, nigeria
-                    </span>
-                  </p>
+                <!-- info -2 -->
+                <div class="info text-white">
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Freelance:<span class="pl-1 text-white capitalize"
+                        >available</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Skill:<span class="pl-1 text-white capitalize"
+                        >Graphics Designer</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Experience:<span class="pl-1 text-white capitalize"
+                        >7 years</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400">
+                      Language:<span class="pl-1 text-white capitalize"
+                        >English, hausa</span
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
-              <!-- info -2 -->
-              <div class="info text-white">
-                <div>
-                  <p class="text-md text-gray-400">
-                    Freelance:<span class="pl-1 text-white capitalize"
-                      >available</span
-                    >
-                  </p>
-                </div>
-                <div>
-                  <p class="text-md text-gray-400">
-                    Skill:<span class="pl-1 text-white capitalize"
-                      >Graphics Designer</span
-                    >
-                  </p>
-                </div>
-                <div>
-                  <p class="text-md text-gray-400">
-                    Experience:<span class="pl-1 text-white capitalize"
-                      >7 years</span
-                    >
-                  </p>
-                </div>
-                <div>
-                  <p class="text-md text-gray-400">
-                    Language:<span class="pl-1 text-white capitalize"
-                      >English, hausa</span
-                    >
-                  </p>
-                </div>
+
+              <div class="flex justify-start items-center space-x-4">
+                <a href="#" class="cta-btn">Download CV</a>
               </div>
             </div>
 
@@ -275,9 +259,6 @@
         </div>
       </section>
 
-      <!-- my projects -->
-
-      <section class="projects"></section>
     </main>
 
     <footer></footer>

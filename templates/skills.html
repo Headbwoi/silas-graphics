@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Silas-Graphics" />
+    <meta name="author" content="Headbwoi" />
+    <title>Silas-Graphics | landing page</title>
+    <link rel="stylesheet" href="../public/styles.css" />
+    <script defer src="../script.js"></script>
+  </head>
+  <body class="font-mono bg-black overflow-x-hidden">
+    <!-- header section -->
+    <header class="flex justify-between items-center relative">
+      <div class="container p-6 lg:px-0 flex items-center justify-between">
+        <!-- logo -->
+        <div
+          class="text-2xl text-gray-300 font-bold capitalise italic relative after:absolute after:left-0 after:block after:w-6 after:h-0.5 after:bg-gray-300 hover:text-gray-200 animate-bounce"
+        >
+          <a href="/index.html">Silas-Graphics</a>
+        </div>
+
+        <!-- desktop nav menu -->
+        <div class="nav-links hidden md:flex space-x-10 nav-animate">
+          <a
+            href="index.html"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Projects</a
+          >
+
+          <a
+            href="#contact"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Contact</a
+          >
+        </div>
+        <!-- hamburger -->
+
+        <div class="hamburger md:hidden" id="toggle">
+          <span
+            class="block w-7 h-0.5 bg-gray-200 mb-2 relative duration-300 cursor-pointer"
+          ></span>
+          <span
+            class="block w-7 h-0.5 bg-gray-200 relative duration-300 cursor-pointer"
+          ></span>
+
+          <!-- mobile nav menu -->
+          <div
+            class="mob-menu fixed top-[10%] left-0 -translate-x-[100%] pl-12 pt-12 overflow-hidden bg-black opacity-95 duration-500 rounded-r-lg w-3/4 h-full shadow-xl z-50"
+          >
+            <a
+              href="index.html"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >Skills</a
+            >
+            <a
+              href="#"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >Projects</a
+            >
+            <a
+              href="#"
+              class="block font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:bg-white bg-crimson w-fit py-4 px-6 rounded-full"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      
+      <!-- skills section -->
+
+      <section class="skills py-20" id="skills">
+        <div class="container">
+          <!-- heading -->
+          <div class="mb-12">
+            <h3
+              class="text-5xl lg:text-7xl text-center text-gray-300 uppercase font-extrabold tracking-widest mb-6 left duration-300 card"
+            >
+              <span class="uppercase text-crimson pl-3 relative">My</span>skills
+            </h3>
+            <p class="text-white text-center text-lg capitalize">what I do</p>
+          </div>
+          <!-- skills box -->
+          <div class="grid place-items-center md:grid-cols-2 lg:grid-cols-3">
+            <!-- box-1 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 duration-200 mb-7 card left">
+              <p class="text-crimson font-bold text-2xl mb-5">Web Design</p>
+              <p class="text-white text-[16px]">
+                I design websites User interface that would keep clients using and returning to your site.
+              </p>
+            </div>
+            <!-- box-2 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 duration-200 mb-7 card right">
+              <p class="text-crimson font-bold text-2xl mb-5">Wedding Cards</p>
+              <p class="text-white text-[16px]">
+                I Design Wedding Cards that adds love and flare to your wedding
+              </p>
+            </div>
+            <!-- box-3 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 duration-200 mb-7 card left">
+              <p class="text-crimson font-bold text-2xl mb-5">Gift Cards</p>
+              <p class="text-white text-[16px]">
+                I Design Gift Cards that gives a "wow" impression to the receiver.
+              </p>
+            </div>
+            <!-- box-4 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 mb-7 card right">
+              <p class="text-crimson text-2xl mb-5">Banners</p>
+              <p class="text-white text-[16px]">
+                I Design Banners that apeals to the eyes and would lure people to your events.
+              </p>
+            </div>
+            <!-- box-5 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 mb-7 card left">
+              <p class="text-crimson text-2xl mb-5">Logos</p>
+              <p class="text-white text-[16px]">
+                I Design Logos that's shockingly easy to remember and recognise.
+              </p>
+            </div>
+            <!-- box-6 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 mb-7 card right">
+              <p class="text-crimson text-2xl mb-5">Brand</p>
+              <p class="text-white text-[16px]">
+                I Design Brands that is guaranteed to grow exponentially.
+              </p>
+            </div>
+            <!-- box-7 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 mb-7 card left">
+              <p class="text-crimson text-2xl mb-5">Flyers</p>
+              <p class="text-white text-[16px]">
+                I Design Flyers that would lure people to your events.
+              </p>
+            </div>
+            <!-- box-8 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 mb-7 card right">
+              <p class="text-crimson text-2xl mb-5">Labels</p>
+              <p class="text-white text-[16px]">
+                I Design labels for products from consumer to industrial users.
+              </p>
+            </div>
+            <!-- box-9 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 mb-7 card left">
+              <p class="text-crimson text-2xl mb-5">product Design</p>
+              <p class="text-white text-[16px]">
+                I Design products for new companies and brands from scratch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

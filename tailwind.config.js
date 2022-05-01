@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["index.html"],
+  content: ["./templates/**/*.html"],
   theme: {
     fontFamily: {
       mono: ["'Space Mono'", "monospace"],
@@ -16,8 +16,9 @@ module.exports = {
       colors: {
         dark: "hsl(217, 28%, 15%)",
         veryDark: "hsl(216, 53%, 9%)",
-        crimson:"crimson",
-        lightDark: "#1a1a1a",
+        crimson:"hsl(348, 83%, 47%)",
+        lightDark: "hsl(0, 0%, 10%)",
+        darkCrimson: "hsl(348, 93%, 24%)",
       },
     },
   },

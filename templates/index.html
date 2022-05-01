@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Silas-Graphics" />
+    <meta name="author" content="Headbwoi" />
+    <title>Silas-Graphics | landing page</title>
+    <link rel="stylesheet" href="../public/styles.css" />
+    <script defer src="../script.js"></script>
+  </head>
+  <body class="font-mono bg-black overflow-x-hidden">
+    <!-- header section -->
+    <header class="flex justify-between items-center relative">
+      <div class="container p-6 lg:px-0 flex items-center justify-between">
+        <!-- logo -->
+        <div
+          class="text-2xl text-gray-300 font-bold capitalise italic relative after:absolute after:left-0 after:block after:w-6 after:h-0.5 after:bg-gray-300 hover:text-gray-200 animate-bounce"
+        >
+          <a href="/index.html">Silas-Graphics</a>
+        </div>
+
+        <!-- desktop nav menu -->
+        <div class="nav-links hidden md:flex space-x-10 nav-animate">
+          <a
+            href="#home"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Projects</a
+          >
+
+          <a
+            href="#contact"
+            class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
+            >Contact</a
+          >
+        </div>
+        <!-- hamburger -->
+
+        <div class="hamburger md:hidden" id="toggle">
+          <span
+            class="block w-7 h-0.5 bg-gray-200 mb-2 relative duration-300 cursor-pointer"
+          ></span>
+          <span
+            class="block w-7 h-0.5 bg-gray-200 relative duration-300 cursor-pointer"
+          ></span>
+
+          <!-- mobile nav menu -->
+          <div
+            class="mob-menu fixed top-[10%] left-0 -translate-x-[100%] pl-12 pt-12 overflow-hidden bg-black opacity-95 duration-500 rounded-r-lg w-3/4 h-full shadow-xl z-50"
+          >
+            <a
+              href="#home"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >Skills</a
+            >
+            <a
+              href="#"
+              class="block w-fit font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:text-white mb-12"
+              >Projects</a
+            >
+            <a
+              href="#"
+              class="block font-semibold text-2xl text-gray-300 hover:text-white duration-300 active:bg-white bg-crimson w-fit py-4 px-6 rounded-full"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- hero section -->
+      <section class="home" id="home">
+        <div
+          class="container lg:flex lg:items-center lg:justify-between lg:h-screen"
+        >
+          <!-- image -->
+          <div class="image lg:w-1/2 left duration-300 card">
+            <img
+              src="../images/silas-meduim.jpeg"
+              alt="silas-ishaya"
+              class="block w-[90%] mx-auto lg:mx-0 my-8 rounded-full md:rounded-sm"
+            />
+          </div>
+
+          <!-- text -->
+          <div
+            class="text text-center lg:text-left px-8 lg:px-0 lg:w-1/2 lg:pl-6 right duration-300 card"
+          >
+            <h1
+              class="font-semibold text-2xl lg:text-4xl text-white block capitalize my-4"
+            >
+              Hi, I am silas-ishaya
+              <span
+                class="block text-center lg:text-left text-crimson text-xl lg:text-3xl my-2"
+                >Graphics Designer</span
+              >
+            </h1>
+            <p
+              class="block text-center lg:text-left text-md text-white my-5 lg:text-lg"
+            >
+              I am the Graphics Designer you've been looking for. Do you want
+              something done and done right? if YES, then
+            </p>
+            <a href="#" class="cta-btn">Hire Me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+
+      <section class="about py-20" id="about">
+        <div class="container">
+          <h2
+            class="text-5xl lg:text-7xl text-center text-gray-300 uppercase font-extrabold tracking-widest mb-6 left duration-300 card"
+          >
+            about<span class="uppercase text-crimson pl-3">me</span>
+          </h2>
+
+          <!-- about me stats -->
+          <div
+            class="px-4 lg:px-0 md:flex md:justify-center lg:items-center lg:justify-between"
+          >
+            <!-- info -->
+            <div class="block">
+              <!-- personal info -->
+              <p
+                class="uppercase text-2xl text-white text-left font-bold mt-12 lg:mt-0 mb-6 right duration-300 card"
+              >
+                personal info
+              </p>
+              <div
+                class="md:flex lg:items-center lg:justify-between mb-8 left ration-400 card"
+              >
+                <!-- info -1 -->
+                <div class="info mr-6">
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Name:<span class="pl-1 text-white capitalize"
+                        >silas ishaya</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Email:<span class="pl-1 text-white"
+                        >silasishaya90@gmail.com</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Age:<span class="pl-1 text-white">19</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Address:<span class="pl-1 text-white capitalize"
+                        >bauchi, nigeria
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <!-- info -2 -->
+                <div class="info text-white">
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Freelance:<span class="pl-1 text-white capitalize"
+                        >available</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Skill:<span class="pl-1 text-white capitalize"
+                        >Graphics Designer</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400 mb-2">
+                      Experience:<span class="pl-1 text-white capitalize"
+                        >7 years</span
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-[1rem] text-gray-400">
+                      Language:<span class="pl-1 text-white capitalize"
+                        >English, hausa</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- cta btn -->
+              <div class="flex justify-start items-center space-x-4">
+                <a href="#" class="cta-btn">Download CV</a>
+                <!-- about me link btn -->
+                <a href="about.html" class="cta-btn">Read More</a>
+              </div>
+            </div>
+
+            <!-- achievement -->
+
+            <div class="grid grid-cols-2 gap-4 right duration-300 card">
+              <div
+                class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150"
+              >
+                <p class="text-crimson text-5xl font-extrabold">7+</p>
+                <p class="capitalize text-lg text-gray-400">
+                  years of Experience
+                </p>
+              </div>
+              <div
+                class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150"
+              >
+                <p class="text-crimson text-5xl font-extrabold">50+</p>
+                <p class="capitalize text-lg text-gray-400">happy clients</p>
+              </div>
+              <div
+                class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150"
+              >
+                <p class="text-crimson text-5xl font-extrabold">100+</p>
+                <p class="capitalize text-lg text-gray-400">
+                  projects completed
+                </p>
+              </div>
+              <div
+                class="bg-lightDark block text-left w-50 h-50 p-6 grid-box hover:-translate-y-2 duration-150"
+              >
+                <p class="text-crimson text-5xl font-extrabold">12+</p>
+                <p class="capitalize text-lg text-gray-400">awards won</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills section -->
+
+      <section class="skills py-20" id="skills">
+        <div class="container">
+          <!-- heading -->
+          <div class="mb-12">
+            <h3
+              class="text-5xl lg:text-7xl text-center text-gray-300 uppercase font-extrabold tracking-widest mb-6 left duration-300 card"
+            >
+              <span class="uppercase text-crimson pl-3 relative">My</span>skills
+            </h3>
+            <p class="text-white text-center text-lg capitalize">what I do</p>
+          </div>
+          <!-- skills box -->
+          <div class="grid place-items-center md:grid-cols-2 lg:grid-cols-3">
+            <!-- box-1 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 duration-200 mb-7 card left">
+              <p class="text-crimson font-bold text-2xl mb-5">Wedding Cards</p>
+              <p class="text-white text-[16px]">
+                I Design Wedding Cards that adds love and flare to your wedding
+              </p>
+            </div>
+            <!-- box-2 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 duration-200 mb-7 card right">
+              <p class="text-crimson font-bold text-2xl mb-5">Gift Cards</p>
+              <p class="text-white text-[16px]">
+                I Design Gift Cards that gives a "wow" impression to the receiver.
+              </p>
+            </div>
+            <!-- box-3 -->
+            <div class="bg-lightDark text-white h-56 w-72 p-10 rounded hover:scale-105 duration-200 mb-7 card left">
+              <p class="text-crimson font-bold text-2xl mb-5">Flyers</p>
+              <p class="text-white text-[16px]">
+                I Design Flyers that would lure people to your events.
+              </p>
+            </div>
+            
+          </div>
+          <div class="right card">
+            <a href="skills.html" class="cta-btn">See More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- my projects -->
+
+      <section class="projects"></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
