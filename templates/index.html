@@ -8,6 +8,8 @@
     <meta name="author" content="Headbwoi" />
     <title>Silas-Graphics | landing page</title>
     <link rel="stylesheet" href="../public/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <script defer src="../script.js"></script>
   </head>
   <body class="font-mono bg-black overflow-x-hidden">
@@ -22,7 +24,7 @@
         </div>
 
         <!-- desktop nav menu -->
-        <div class="nav-links hidden md:flex space-x-10 nav-animate">
+        <div class="nav-links hidden lg:flex space-x-10 nav-animate">
           <a
             href="#home"
             class="font-semibold text-lg text-gray-300 hover:text-white duration-300 active:text-white"
@@ -52,7 +54,7 @@
         </div>
         <!-- hamburger -->
 
-        <div class="hamburger md:hidden" id="toggle">
+        <div class="hamburger lg:hidden" id="toggle">
           <span
             class="block w-7 h-0.5 bg-gray-200 mb-2 relative duration-300 cursor-pointer"
           ></span>
@@ -104,7 +106,7 @@
           <!-- image -->
           <div class="image lg:w-1/2 left duration-300 card">
             <img
-              src="../images/silas-meduim.jpeg"
+              src="../images/silas.jpg"
               alt="silas-ishaya"
               class="block w-[90%] mx-auto lg:mx-0 my-8 rounded-full md:rounded-sm"
             />
@@ -112,7 +114,7 @@
 
           <!-- text -->
           <div
-            class="text text-center lg:text-left px-8 lg:px-0 lg:w-1/2 lg:pl-6 right duration-300 card"
+            class="text text-center lg:text-left px-8 md:px-16 lg:px-0 lg:w-1/2 lg:pl-6 right duration-300 card"
           >
             <h1
               class="font-semibold text-2xl lg:text-4xl text-white block capitalize my-4"
@@ -129,7 +131,7 @@
               I am the Graphics Designer you've been looking for. Do you want
               something done and done right? if YES, then
             </p>
-            <a href="#" class="cta-btn">Hire Me</a>
+            <a href="#contact" class="cta-btn">Hire Me</a>
           </div>
         </div>
       </section>
@@ -306,6 +308,16 @@
                 I Design Flyers that would lure people to your events.
               </p>
             </div>
+            <!-- box-4 -->
+            <div
+              class="bg-lightDark text-white h-56 w-72 p-10 rounded lg:hidden hover:scale-105 duration-200 mb-7 card right"
+            >
+              <p class="text-crimson text-2xl mb-5">Banners</p>
+              <p class="text-white text-[16px]">
+                I Design Banners that apeals to the eyes and would lure people
+                to your events.
+              </p>
+            </div>
           </div>
           <div class="right card">
             <a href="skills.html" class="cta-btn">See More</a>
@@ -327,7 +339,7 @@
               >
             </h3>
             <p class="text-white text-center text-lg capitalize">
-              what I've do
+              what I've done
             </p>
           </div>
 
@@ -342,16 +354,14 @@
               <img
                 src="../images/proj-1.jpg"
                 alt="proj-1"
-                class="w-full h-full object-cover"
+                class="w-full h-full"
               />
               <!-- content -->
               <div
                 class="bg-lightDark absolute inset-0 w-full h-full flex flex-col items-center justify-center p-8 duration-200 -translate-y-full group-hover:translate-y-0"
               >
-                <p class="text-white text-xl my-2">Project 1</p>
-                <p class="text-center text-gray-300 mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  voluptate
+                <p class="text-center text-gray-300 mb-2 capitalize">
+                  notebook design
                 </p>
                 <a href="#" class="text-crimson hover:text-white">Read More</a>
               </div>
@@ -363,16 +373,14 @@
               <img
                 src="../images/proj-2.jpg"
                 alt="proj-1"
-                class="w-full h-full object-cover"
+                class="w-full h-full"
               />
               <!-- content -->
               <div
                 class="bg-lightDark absolute inset-0 w-full h-full flex flex-col items-center justify-center p-8 duration-200 -translate-y-full group-hover:translate-y-0"
               >
-                <p class="text-white text-xl my-2">Project 1</p>
-                <p class="text-center text-gray-300 mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  voluptate
+                <p class="text-center text-gray-300 mb-2 capitalize">
+                  banner design
                 </p>
                 <a href="#" class="text-crimson hover:text-white">Read More</a>
               </div>
@@ -384,16 +392,33 @@
               <img
                 src="../images/proj-3.jpg"
                 alt="proj-1"
-                class="w-full h-full object-cover"
+                class="w-full h-full"
               />
               <!-- content -->
               <div
                 class="bg-lightDark absolute inset-0 w-full h-full flex flex-col items-center justify-center p-8 duration-200 -translate-y-full group-hover:translate-y-0"
               >
-                <p class="text-white text-xl my-2">Project 1</p>
-                <p class="text-center text-gray-300 mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  voluptate
+                <p class="text-center text-gray-300 mb-2 capitalize">
+                  tailors card
+                </p>
+                <a href="#" class="text-crimson hover:text-white">Read More</a>
+              </div>
+            </div>
+            <!-- box-4 -->
+            <div
+              class="relative overflow-hidden w-80 h-60 group lg:hidden duration-200 left card mb-7"
+            >
+              <img
+                src="../images/proj-4.jpg"
+                alt="proj-1"
+                class="w-full h-full"
+              />
+              <!-- content -->
+              <div
+                class="bg-lightDark absolute inset-0 w-full h-full flex flex-col items-center justify-center p-8 duration-200 -translate-y-full group-hover:translate-y-0"
+              >
+                <p class="text-center text-gray-300 mb-2 capitalize">
+                  limaro bags institute
                 </p>
                 <a href="#" class="text-crimson hover:text-white">Read More</a>
               </div>
@@ -405,8 +430,135 @@
           </div>
         </div>
       </section>
+
+      <!-- contact section -->
+      <section class="contact py-20" id="contact">
+        <div class="container">
+          <!-- heading -->
+          <div class="mb-12">
+            <h3
+              class="text-5xl lg:text-7xl text-center text-gray-300 uppercase font-extrabold tracking-widest mb-6 left duration-300 card"
+            >
+              contact<span class="uppercase text-crimson pl-3 relative"
+                >me</span
+              >
+            </h3>
+          </div>
+
+          <div class="w-[95%] mx-auto rounded-md px-8 py-16 lg:flex lg:justify-between lg:space-x-12">
+
+            <!-- left side -->
+            <div class="block mb-6 lg:mb-0 card left duration-300 lg:w-1/2">
+              <div class="block">
+                <p class="mb-5 text-crimson text-xl capitalize">
+                  Get in touch with me
+                </p>
+                <p class="text-white text-lg mb-5">
+                  let's discuss what you want and how we can achieve it.
+                </p>
+                <div>
+                  <p class="text-lg lg:text-xl text-gray-400 mb-2">
+                    Address:<span class="pl-1 text-white capitalize"
+                      >Bauchi, Nigeria</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p class="text-lg lg:text-xl text-gray-400 mb-2">
+                    Email:<span class="pl-1 text-white"
+                      ><a href="silasishaya90@gmail.com"
+                        >silasishaya90@gmail.com</a
+                      ></span
+                    >
+                  </p>
+                </div>
+                <!-- social media icons -->
+                <p class="capitalize text-crimson text-lg mb-5 mt-4">
+                  reach me via social media
+                </p>
+                <div class="flex items-center justify-center space-x-3">
+                  <i class="fab fa-facebook text-white p-2 rounded-full text-xl border border-gray-300"><a href="#"></a></i>
+                  <i class="fab fa-twitter text-white p-2 rounded-full text-xl border border-gray-300"><a href="#"></a></i>
+                  <i class="fab fa-whatsapp text-white p-2 rounded-full text-xl border border-gray-300"><a href="#"></a></i>
+                  <i class="fab fa-instagram text-white p-2 rounded-full text-xl border border-gray-300"><a href="#"></a></i>
+                  
+
+                </div>
+              </div>
+            </div>
+
+            <!-- form box -->
+          <form
+          action="#"
+          class="card right duration-300 lg:w-1/2"
+          id="form"
+        >
+          <!-- right side -->
+          <div class="block">
+            <div>
+              <p class="capitalize text-crimson text-lg mb-4">
+                or Send me an Email
+              </p>
+            </div>
+            <!-- name -->
+            <div class="w-full mb-4">
+              <label for="name" class="capitalize text-white mb-2"
+                >first name</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="fname"
+                class="w-full py-3 px-3 bg-lightDark text-white placeholder:gray-400 rounded hover:placeholder:text-white focus:border focus:placeholder:text-white focus:border-dark outline-none cursor-pointer"
+                placeholder="Enter Your First Name"
+              />
+            </div>
+            <!-- last name -->
+            <div class="w-full mb-4">
+              <label for="name" class="capitalize text-white mb-2"
+                >last name</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="lname"
+                class="w-full py-3 px-3 bg-lightDark text-white placeholder:gray-400 rounded hover:placeholder:text-white focus:border focus:placeholder:text-white focus:border-dark outline-none cursor-pointer"
+                placeholder="Enter Your Last Name"
+              />
+            </div>
+            <!-- email -->
+            <div class="w-full mb-5">
+              <label for="name" class="capitalize text-white mb-2"
+                >email address</label
+              >
+              <input
+                type="email"
+                name="name"
+                id="email"
+                class="w-full py-3 px-3 bg-lightDark text-white placeholder:gray-400 rounded hover:placeholder:text-white focus:border focus:placeholder:text-white focus:border-dark outline-none cursor-pointer"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <!-- submit btn -->
+            <div class="submit-btn">
+              <button type="submit" class="cta-btn hover:scale-x-105 duration-100">
+                <a href="">Submit</a>
+              </button>
+            </div>
+          </div>
+        </form>
+          </div>
+          
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-lightDark">
+      <div class="container">
+        <div class="text-center">
+          <p class="text-gray-200">Designed by John &copy; 2022</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
