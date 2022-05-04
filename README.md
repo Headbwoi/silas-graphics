@@ -10,7 +10,7 @@
 
 ## Overview
 
-- Live Site URL: [live site]()
+- Live Site URL: [live site](https://headbwoi.github.io/silas-graphics/templates/)
 
 ## My process
 
